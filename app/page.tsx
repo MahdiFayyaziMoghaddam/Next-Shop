@@ -12,7 +12,7 @@ export default function Home() {
           </h2>
           <Link
             variant="text"
-            href="/allProduct"
+            href="/shop"
             className="text-accent! text-[1.2em] max-lg:text-[1em] max-md:text-[0.8em] max-sm:text-[0.6em]"
           >
             View All

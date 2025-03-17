@@ -12,7 +12,7 @@ function Header() {
       <Link variant="text" href="/">
         <Image
           src="./image/logo.png"
-          className="w-[9em]! max-md:w-[7em]! max-sm:w-[5em]!"
+          className="w-[9em]! max-md:w-[7em]! max-sm:w-[5em]! rounded-none"
           alt="logo"
         />
       </Link>

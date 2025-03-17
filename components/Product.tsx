@@ -19,7 +19,7 @@ function Product({
   title,
 }: IProductProps) {
   return (
-    <div className="flex flex-col border-accent border-[0.05em] rounded-[0.5em] p-1 pb-2 bg-secondary/7">
+    <div className="flex flex-col border-accent border-[0.05em] rounded-[0.5em] p-1 pb-2 bg-secondary/4">
       <Image src={imgSrc} className="text-[1.4em] max-sm:text-[1em]">
         {/* <ImageFooter variant="like" /> */}
         <ImageOverlay />

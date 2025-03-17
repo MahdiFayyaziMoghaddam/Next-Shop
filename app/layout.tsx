@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import ContextProvider from "@/provider/ContextProvider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import Provider from "@/provider/Provider";
 
 export const metadata: Metadata = {
   title: "Next Shop",
@@ -23,11 +23,11 @@ export default function RootLayout({
         cz-shortcut-listen="false"
         className="relative flex flex-col items-center min-h-screen bg-primary p-0 m-0 px-[6em] max-xl:px-[4em] max-lg:px-[3em] max-md:px-[2em] max-sm:px-[1em] transition-all duration-500!"
       >
-        <ContextProvider>
+        <Provider>
           <Header />
           {children}
           <Footer />
-        </ContextProvider>
+        </Provider>
       </body>
     </html>
   );

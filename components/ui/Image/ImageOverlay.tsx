@@ -14,7 +14,7 @@ function ImageOverlay() {
         <IoEyeOutline />
       </Link>
       <Link href="/" variant="icon" className="text-[0.9em]" disabled>
-        <Like />
+        <Like className="size-full!" />
       </Link>
     </div>
   );

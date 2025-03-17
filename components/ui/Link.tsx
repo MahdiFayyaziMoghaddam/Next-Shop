@@ -9,6 +9,7 @@ interface ILinkProps {
   href?: string;
   className?: string;
   disabled?: boolean;
+  onClick?: () => void;
 }
 
 function Link({
@@ -17,6 +18,7 @@ function Link({
   href = "/",
   className,
   disabled,
+  onClick,
 }: ILinkProps) {
   const { theme } = useTheme();
   return (
@@ -25,6 +27,9 @@ function Link({
       onClick={(e) => {
         if (disabled) {
           e.preventDefault();
+        }
+        if (onClick) {
+          onClick();
         }
       }}
       className={`flex-center text-dark-gray duration-400! ${
